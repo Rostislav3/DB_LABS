@@ -1,0 +1,7 @@
+SELECT s.year_of_passing, l.regname, MAX(tests.phys_test_ball100) FROM students s
+JOIN locations l
+ON s.location_id = l.location_id
+JOIN tests_results tests
+ON s.tests_results_id = tests.tests_id
+WHERE tests.phys_test_status = 'Зараховано'
+GROUP BY l.regname, s.year_of_passing;

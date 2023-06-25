@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="{{url_for('static', filename='/styles.css') }}"/>
+    <title>Title</title>
+</head>
+<body>
+<form method="POST" action="/" class="main-form">
+    <input class="main-page-inp" type="submit" name="submit_button" value="Show locations">
+    <input class="main-page-inp" type="submit" name="submit_button" value="Show students">
+    <input class="main-page-inp" type="submit" name="submit_button" value="Show EO">
+    <input class="main-page-inp" type="submit" name="submit_button" value="Show Tests">
+    <input class="main-page-inp" type="submit" name="submit_button" value="Filters">
+    <input class="main-page-inp"  type="submit" name="submit_button" value="Use PostgreSQL">
+    <input class="main-page-inp"  type="submit" name="submit_button" value="Use MongoDB">
+</form>
+</body>
+</html>
